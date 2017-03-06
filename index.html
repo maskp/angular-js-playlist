@@ -3,10 +3,12 @@
   <head>
     <title>TheNetNinja Angular Playlist</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
-    <script src="http://localhost:4200/app/lib/angular.min.js"></script>
+    <script src="./app/lib/angular.min.js"></script>
   </head>
-  <body>
-	<input type="text" ng-model="favemeat" placeholder="enter your fav meat">
-	<p> your fav meat is {{favmeat}}</p>
+  <body ng-init="numbers['0','1','2']">
+	<input type="text" ng-model="favemeat" placeholder="enter your fav meat"/>
+	<p> your fave {{numbers[1]}}, and you also like {{numbers[2]}}</p>
+  <p>{{numbers}}</p>
+
   </body>
 </html>
