@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app><!--ngapp directive-->
   <head>
     <title>TheNetNinja Angular Playlist</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="app/lib/angular.min"></script>
   </head>
   <body>
-
+    <input type="text" ng-model="favmeat" placeholder="enter your fav meat"/>
+    <p>your fav meat is {{favmeat}}</p>
   </body>
 </html>
