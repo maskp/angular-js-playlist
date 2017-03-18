@@ -5,10 +5,13 @@
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
   <script src="app/lib/angular.min"></script>
   </head>
-  <body ng-init = "color = 'blue'"><!--allow us to load data when application loads-->
+  <body ng-init = "ninja=['yoshi','crystal','pmk00']"><!--allow us to load data when application loads-->
   <!--two way data binding-->
     <input type="text" ng-model="favmeat" placeholder="enter your fav meat"/>
     <p>your fav meat is {{favmeat}}</p>
-    <p class='blue'>i dont knoe why</p>
+    <ul>
+      <li ng-repeat="ninja in ninja">{{ninja}}</li>
+
+    </ul>
 </body>
 </html>
